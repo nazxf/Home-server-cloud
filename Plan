@@ -1,0 +1,551 @@
+🚀 Project Blueprint: Professional Cloud Hosting Platform
+
+> Vision: Build a world-class, enterprise-grade web hosting platform that rivals industry leaders like Hostinger, DigitalOcean, and IDCloudHost. The platform combines cutting-edge cloud infrastructure with an exceptional user experience.
+
+
+
+
+---
+
+📋 Executive Summary
+
+Attribute	Detail
+
+Project Type	Full-Stack SaaS Platform
+Industry	Cloud Infrastructure & Web Hosting
+Target Market	Developers, Businesses, IT Professionals
+Core Differentiator	Nextcloud-integrated ecosystem with premium UX
+
+
+---
+
+🛠️ Technology Stack
+
+Frontend Architecture
+
+Component	Technology	Rationale
+
+Runtime	Bun	Ultra-fast runtime, package manager, bundler
+Framework	Next.js (App Router)	SSR/SSG, SEO optimization, file-based routing
+UI Components	shadcn/ui	Accessible, customizable, modern
+Styling	Tailwind CSS	Utility-first, rapid development
+State Management	Zustand / TanStack Query	Lightweight, powerful data handling
+Animations	Framer Motion	Smooth, premium micro-interactions
+
+Design Philosophy
+
+✨ Modern — Clean lines, generous whitespace, contemporary aesthetics
+
+🎯 Premium — High-end feel comparable to Vercel, Linear, Stripe
+
+🏢 Enterprise-Ready — Professional, trustworthy, scalable appearance
+
+⚡ Performance-First — Sub-3s load times, optimized Core Web Vitals
+
+Backend Architecture
+
+Component	Technology	Purpose
+
+Language	Go (Golang)	High performance, concurrency
+API Design	RESTful + GraphQL	Flexible, efficient data fetching
+Database	PostgreSQL	Reliable, ACID-compliant storage
+Caching Layer	Redis	Session management, rate limiting
+Authentication	JWT + OAuth 2.0	Secure, stateless auth
+Queue System	RabbitMQ / NATS	Async task processing
+
+Infrastructure Layer
+
+Component	Technology	Function
+
+Virtualization	Proxmox VE (KVM)	VPS provisioning & management
+Containerization	Docker + Docker Compose	App hosting isolation
+Orchestration	Kubernetes (optional)	Scalable container management
+Core Ecosystem	Nextcloud	File management, collaboration
+Reverse Proxy	Traefik / Nginx	Traffic routing, SSL termination
+
+
+---
+
+💼 Product Catalog
+
+Tier 0: Free Hosting (InfinityFree Style)
+
+🎁 Perfect for: Students, learning, checking out the platform
+├── 🌐 Static/PHP Hosting: Upload HTML, JS, PHP files via File Manager
+├── �️ Shared Database: MySQL Cluster (1 DB limit, Shared Instance)
+├── � Access: Web-based File Manager & PHPMyAdmin
+├── ⚡ Performance: Standard (No SLA)
+├── 🛑 Limitations: Sleep mode on inactivity, Subdomain only
+
+Tier 1: Premium Shared Hosting (Containerized)
+
+📦 Perfect for: Serious blogs, portfolios, small business
+├── �️ Dockerized Isolation: Dedicated container resources (No lag from neighbors)
+├── 📧 Email hosting included
+├── 🔒 Auto-SSL via Let's Encrypt
+├── 🔄 Daily backups
+└── ⚡ One-click app installer
+
+Tier 2: KVM VPS (Virtual Private Servers)
+
+🖥️ Perfect for: Developers, growing applications, custom environments
+├── Full root access
+├── Choice of OS: Ubuntu, Debian, AlmaLinux, Rocky Linux, CentOS
+├── Pre-configured panels: CyberPanel, cPanel, Plesk
+├── One-click apps: WordPress, Docker, LAMP Stack
+├── Scalable resources (CPU, RAM, Storage)
+└── Multiple datacenter locations
+
+Tier 3: Cloud Hosting
+
+☁️ Perfect for: High-traffic sites, modern web applications
+├── Auto-scaling infrastructure
+├── Load balancing
+├── High availability (99.9% SLA)
+├── CDN integration
+└── Managed databases
+
+Tier 4: Managed App & DB Hosting
+
+🎮 Perfect for: Specific use-cases, turnkey solutions
+
+Available Applications:
+├── 🎮 Minecraft Server — Game server hosting with mod support
+├── 🔥 Supabase — Open-source Firebase alternative
+├── 🐳 Docker — Container deployment platform
+├── 🐘 PostgreSQL — Managed database instances
+├── ⚡ n8n — Workflow automation platform
+├── 📊 Metabase — Business intelligence dashboards
+└── 🔄 Custom Apps — Deploy any Docker-based application
+
+
+---
+
+🏗️ System Architecture
+
+Module A: Public Website
+
+Pages & Components
+
+Page	Purpose	Key Features
+
+Landing Page	Conversion-focused entry point	Hero section, animated pricing cards, feature grid, testimonials, trust badges, CTA buttons
+Product Pages	Detailed service information	Interactive configurators, comparison tables, FAQ accordions
+VPS Configurator	Custom server builder	Location selector, OS/Image tabs, resource sliders, real-time pricing
+Knowledge Base	Self-service documentation	Searchable articles, categorized guides, video tutorials
+Blog	SEO & content marketing	Rich text editor, categories, tags, author profiles
+Server Status	Transparency & trust	Real-time monitoring, incident history, uptime graphs
+Contact/Support	Customer engagement	Contact form, live chat widget, support hours
+
+VPS Configurator Specification
+
+┌─────────────────────────────────────────────────────────────┐
+│  🌍 LOCATION SELECTOR                                       │
+│  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐           │
+│  │ 🇮🇩 Jakarta  │ │ 🇸🇬 Singapore│ │ 🇺🇸 US West  │ ...      │
+│  └─────────────┘ └─────────────┘ └─────────────┘           │
+├─────────────────────────────────────────────────────────────┤
+│  💿 IMAGE SELECTOR (Tabbed Interface)                       │
+│  ┌──────────┬───────────────┬──────────────┐               │
+│  │ Plain OS │ OS with Panel │ Applications │               │
+│  └──────────┴───────────────┴──────────────┘               │
+│                                                             │
+│  [🔍 Search Images...]                                      │
+│                                                             │
+│  Ubuntu 22.04 LTS    ○        WordPress + Ubuntu    ○      │
+│  Debian 12           ○        Docker + Ubuntu       ○      │
+│  AlmaLinux 9         ○        LAMP Stack            ○      │
+│  Rocky Linux 9       ○        Nextcloud             ○      │
+├─────────────────────────────────────────────────────────────┤
+│  ⚙️ RESOURCES                                               │
+│  CPU:     [━━━━━━○━━━] 4 vCPU                               │
+│  RAM:     [━━━━○━━━━━] 8 GB                                 │
+│  Storage: [━━━━━━━○━━] 100 GB NVMe                          │
+│  Bandwidth: Unlimited                                       │
+├─────────────────────────────────────────────────────────────┤
+│  💰 TOTAL: $24.99/month          [🛒 Deploy Now]            │
+└─────────────────────────────────────────────────────────────┘
+
+
+---
+
+Module B: Client Area (User Dashboard)
+
+Dashboard Components
+
+┌─────────────────────────────────────────────────────────────┐
+│  DASHBOARD OVERVIEW                                         │
+├─────────────────────────────────────────────────────────────┤
+│  📊 Quick Stats                                             │
+│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐           │
+│  │ 3       │ │ 2       │ │ $45.00  │ │ 2       │           │
+│  │ Active  │ │ VPS     │ │ Balance │ │ Pending │           │
+│  │ Services│ │ Running │ │ Credits │ │ Tickets │           │
+│  └─────────┘ └─────────┘ └─────────┘ └─────────┘           │
+├─────────────────────────────────────────────────────────────┤
+│  📈 Resource Usage (Live Graphs)                            │
+│  CPU ████████░░ 78%  |  RAM ██████░░░░ 62%  |  Disk ███░░░ 45% │
+├─────────────────────────────────────────────────────────────┤
+│  🖥️ My Services                                             │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ VPS-Jakarta-01    │ 4 vCPU │ 8GB │ ● Running │ [▶️]    │  │
+│  │ App-Minecraft-01  │ 2 vCPU │ 4GB │ ● Running │ [▶️]    │  │
+│  │ Hosting-Premium   │ Shared │ 10GB│ ● Active  │ [⚙️]    │  │
+│  └──────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────┘
+
+Feature List
+
+Feature	Description
+
+Authentication	Register, Login, 2FA, OAuth (Google, GitHub)
+Dashboard	Overview cards, usage charts, quick actions
+Service Management	Start/Stop/Restart, Console access, Reinstall OS
+Resource Monitoring	Real-time CPU, RAM, Disk, Network graphs
+Billing Center	Invoices, Payment methods, Auto-renewal, Credits
+Support Tickets	Create, track, and manage support requests
+API Management	Generate/revoke API tokens, usage logs
+Account Settings	Profile, Security, Notifications, SSH Keys
+
+
+---
+
+Module C: Admin Panel
+
+Administrative Features
+
+Section	Capabilities
+
+Dashboard	KPIs, revenue charts, active users, system health
+User Management	View/edit users, impersonation, suspend accounts
+Service Management	All services, manual provisioning, terminate
+Infrastructure	Node status, resource allocation, maintenance mode
+Orders & Billing	Invoices, refunds, payment logs, revenue reports
+Support	Ticket queue, assignments, response templates
+System Settings	Pricing, plans, datacenter config, API keys
+Audit Logs	Complete action history, security events
+
+
+---
+
+⚙️ System Integrations
+
+Payment Processing
+
+Gateway: Midtrans (Primary)
+Methods:
+- Credit/Debit Cards (Visa, Mastercard)
+- Bank Transfer (VA)
+- E-Wallets (GoPay, OVO, DANA)
+- Convenience Store (Alfamart, Indomaret)
+
+Automation:
+
+Webhook listener for payment confirmation
+
+Auto-activate service on successful payment
+
+Auto-suspend after 3-day grace period
+
+Auto-terminate after 14-day suspension
+
+Invoice generation (PDF)
+
+Receipt emails
+
+
+Notification System
+
+Email (Self-Hosted SMTP):
+Provider: Custom SMTP Server
+Configuration:
+- SPF Record: Required ✓
+- DKIM Signing: Required ✓
+- DMARC Policy: Required ✓
+
+Templates:
+- Welcome / Account Created
+- Email Verification
+- Password Reset
+- Invoice Generated
+- Payment Received
+- Service Provisioned
+- Renewal Reminder (7-day, 3-day, 1-day)
+- Suspension Warning
+- Service Terminated
+
+Provisioning Engine
+
+🛡️ Provisioning Engine (The "Brain")
+
+Core Technology: CyberPanel (OpenLiteSpeed) running in Headless Mode via API.
+
+1. Frontend (Next.js): The beautiful "Face". User interacts here.
+
+
+2. Middleware (Golang): The "Manager". Validates requests and talks to CyberPanel.
+
+
+3. Backend (CyberPanel): The "Worker". Executes heavy tasks silently.
+
+
+
+User Action (Frontend)	Golang API (Backend)	CyberPanel Action (Server)
+
+Create Website	POST /api/provision	createWebsite (Setup VirtualHost)
+Check Status	GET /api/status	Monitor Service Status
+Reset Password	POST /api/ftp/reset	changeFTPPassword
+Suspend User	POST /api/suspend	suspendWebsite
+
+> Note: The user NEVER sees the default CyberPanel UI. They only see your custom Premium Next.js Dashboard.
+
+
+
+🌉 Database Management Strategy (The Bridge)
+
+We use a Single Centralized PHPMyAdmin instance customized to handle both tiers:
+
+Tier	Connection Type	How it works
+
+Tier 0 (Free)	Local Socket	PHPMyAdmin connects to localhost (MariaDB Cluster)
+Tier 1 (Premium)	Docker Network	PHPMyAdmin connects to Container IP (e.g., 172.18.0.5)
+
+> Technical Detail: We will configure PHPMyAdmin's config.inc.php with AllowArbitraryServer = true to allow dynamic host connections.
+
+
+
+
+---
+
+🔒 Security Framework
+
+Layer	Implementation
+
+Transport	HTTPS everywhere (Cloudflare SSL)
+Application	OWASP Top 10 compliance
+Authentication	bcrypt password hashing, JWT rotation
+Authorization	Role-Based Access Control (RBAC)
+Rate Limiting	Redis-based, per-IP and per-user
+Input Validation	Server-side sanitization, prepared statements
+Webhook Security	HMAC signature verification
+Audit Logging	Immutable event logs, tamper detection
+Backup Strategy	Daily automated backups, 30-day retention
+DDoS Protection	Cloudflare proxy, rate limiting
+
+
+---
+
+🎨 Design System
+
+Visual Identity
+
+Element	Specification
+
+Primary Color	Cloud Blue #0EA5E9
+Secondary Color	Deep Navy #0F172A
+Accent Color	Electric Cyan #22D3EE
+Success	Emerald #10B981
+Warning	Amber #F59E0B
+Error	Rose #F43F5E
+Background	Slate #0F172A → #1E293B (gradient)
+Surface	Slate #1E293B with subtle glass effect
+Text Primary	White #FFFFFF
+Text Secondary	Slate #94A3B8
+
+Typography
+
+--font-display: "Cal Sans", "Inter", system-ui, sans-serif;
+--font-body: "Inter", system-ui, sans-serif;
+--font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+UI Patterns
+
+Cards: Glassmorphism with subtle borders, hover elevation
+
+Buttons: Gradient fills, smooth hover transitions
+
+Inputs: Dark backgrounds, glowing focus states
+
+Modals: Backdrop blur, smooth enter/exit animations
+
+Tables: Alternating rows, sticky headers, hover highlights
+
+Charts: Gradient fills, animated on scroll into view
+
+Animation Guidelines
+
+/* Micro-interactions */
+transition-fast: 150ms ease-out;
+transition-base: 250ms ease-out;
+transition-slow: 400ms ease-out;
+
+/* Page transitions */
+page-enter: fade-in + slide-up (300ms);
+
+/* Loading states */
+skeleton: shimmer animation (1.5s infinite);
+spinner: rotate animation (1s linear infinite);
+
+
+---
+
+👥 Target Audience
+
+User Personas
+
+Persona	Description	Needs
+
+Indie Developer	Solo developer building side projects	Affordable VPS, easy deployment, good docs
+Startup Team	Small technical team scaling fast	Reliable infrastructure, fair pricing, support
+Agency	Web agency managing client sites	Multi-site management, white-label options
+Enterprise	Large organization with strict requirements	SLA guarantees, compliance, dedicated support
+Gamer	Minecraft/game server enthusiast	Easy setup, low latency, mod support
+
+
+---
+
+🏢 Business Infrastructure
+
+Domain Services
+
+Integration with registrar API (Namecheap, Enom, ResellerClub)
+
+Domain search & availability check
+
+DNS management interface
+
+Auto-renewal for domains
+
+Legal Compliance
+
+Terms of Service (ToS): Comprehensive legal agreement
+
+Privacy Policy: GDPR-compliant data handling
+
+Acceptable Use Policy (AUP):
+
+❌ No cryptocurrency mining
+
+❌ No gambling/casino sites
+
+❌ No illegal content
+
+❌ No spam/phishing
+
+❌ No DDoS attacks
+
+Customer Support
+
+Live Chat: Crisp / Tawk.to integration
+
+Ticket System: Priority levels, SLA tracking
+
+Knowledge Base: Self-service first approach
+
+Support Hours: 24/7 for critical issues
+
+Disaster Recovery
+
+Backup Targets: S3-compatible storage (Wasabi, IDCloudHost Object Storage)
+
+Backup Frequency: Daily incremental, weekly full
+
+Retention: 30 days standard, 90 days enterprise
+
+RTO/RPO: 4 hours / 24 hours
+
+
+---
+
+📅 Development Phases
+
+Phase 1: Foundation (Weeks 1-4)
+
+[ ] Project setup & architecture
+
+[ ] Database schema design
+
+[ ] Authentication system
+
+[ ] Basic API structure
+
+[ ] Landing page design & development
+
+Phase 2: Core Platform (Weeks 5-8)
+
+[ ] User dashboard
+
+[ ] Service management basics
+
+[ ] Payment integration (Midtrans)
+
+[ ] Email notification system
+
+[ ] Admin panel foundation
+
+Phase 3: Provisioning (Weeks 9-12)
+
+[ ] Proxmox API integration
+
+[ ] VPS provisioning automation
+
+[ ] Docker-based app hosting
+
+[ ] Resource monitoring
+
+Phase 4: Polish & Launch (Weeks 13-16)
+
+[ ] UI/UX refinement
+
+[ ] Performance optimization
+
+[ ] Security audit
+
+[ ] Documentation
+
+[ ] Beta testing
+
+[ ] Production deployment
+
+
+---
+
+🎯 Success Metrics
+
+Metric	Target
+
+Uptime	99.9% SLA
+Page Load Time	< 3 seconds
+API Response Time	< 200ms average
+Provisioning Time	< 60 seconds (VPS), < 30 seconds (Apps)
+Customer Satisfaction	> 4.5/5 rating
+Support Response	< 2 hours first response
+
+
+---
+
+📝 Notes for Development
+
+> Design Priority: The UI must feel premium from the first interaction. Study Vercel, Linear, and Stripe for inspiration. Every animation, every transition, every micro-interaction matters.
+
+
+
+> Performance First: Lazy load everything possible. Optimize images. Use edge caching. The platform should feel instant.
+
+
+
+> Security Always: Never trust user input. Validate everything server-side. Log security events. Regular penetration testing.
+
+
+
+> Documentation: Every API endpoint documented. Every feature has a help article. Good docs reduce support load.
+
+
+
+
+---
+
+Last Updated: January 30, 2026
+Version: 2.0
+
+Saran wran yang bagus ini saya kurang suka wanna biru tua
